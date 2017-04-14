@@ -4,7 +4,7 @@
   "description": "A library that helps you create a discord bot with DiscordJS",
   "main": "lib/Krobotjs.js",
   "scripts": {
-    "build": "babel src/ -d lib/",
+    "build": "./node_modules/.bin/babel src/ -d lib/",
     "prepublish": "npm run build",
     "postinstall": "npm run build"
   },
