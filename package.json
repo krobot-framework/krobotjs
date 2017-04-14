@@ -5,8 +5,7 @@
   "main": "lib/Krobotjs.js",
   "scripts": {
     "build": "./node_modules/.bin/babel src/ -d lib/",
-    "prepublish": "npm run build",
-    "postinstall": "npm run build"
+    "prepublish": "npm run build"
   },
   "author": "Vavaballz",
   "license": "GPL-3.0",
