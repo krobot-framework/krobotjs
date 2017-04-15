@@ -41,7 +41,7 @@ class CommandBuilder {
 
       if (arg === '*') arg = '[dynamic...]';
       if (arg[0] === '[') optional = true;
-
+      
       arg = arg.slice(1, arg.length - 1);
 
       if (arg.includes(':'))

@@ -33,11 +33,15 @@ commands.group().prefix("#").apply(_ => {
 bot.on('message', message => {
   // If the message is a command, then it will be executed and will return "true"
   // yet, if there is no command, it will return "false"
-  if (!commands.dispatch(message))
+  if (!commands.dispatch(message)) {
+
+  }
   // continue actions
 });
 bot.on('ready', _ => console.log('Connected'));
 bot.on('reconnecting', _ => console.log('Reconnecting'));
 bot.on('error', error => console.error(error));
+
+process.on('uncaughtException', err => console.log(err));
 
 bot.login(process.env.DISCORD_TOKEN);

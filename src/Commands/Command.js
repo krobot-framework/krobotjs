@@ -14,7 +14,7 @@ class Command {
       this._subs.forEach(sub => {
         if (sub.command === args[0]) {
           if (this.callMiddlewares(message)) {
-            sub.call(message, args.slice(1));
+            sub.call(parser, message, args.slice(1));
             subCalled = true;
           }
           return;
