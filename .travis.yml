@@ -4,7 +4,9 @@ node_js:
 cache:
   directories:
   - node_modules
-install: npm install
+install: 
+  - npm install -g babel-cli
+  - npm install
 deploy:
   provider: npm
   email: vavaballz@gmail.com
