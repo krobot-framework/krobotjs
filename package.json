@@ -1,6 +1,6 @@
 {
   "name": "krobotjs",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "A library that helps you create a discord bot with DiscordJS",
   "main": "lib/Krobotjs.js",
   "scripts": {
@@ -10,7 +10,8 @@
   "author": "Vavaballz",
   "license": "GPL-3.0",
   "dependencies": {
-    "discord.js": "^11.0.0"
+    "discord.js": "^11.0.0",
+    "flow-runtime": "^0.10.0"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
@@ -19,7 +20,6 @@
     "babel-plugin-transform-decorators-legacy": "^1.3.4",
     "babel-plugin-transform-flow-strip-types": "^6.22.0",
     "babel-preset-env": "^1.3.3",
-    "babel-preset-stage-2": "^6.24.1",
-    "flow-runtime": "^0.10.0"
+    "babel-preset-stage-2": "^6.24.1"
   }
 }
