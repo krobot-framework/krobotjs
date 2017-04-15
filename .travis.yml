@@ -5,3 +5,11 @@ cache:
   directories:
   - node_modules
 install: npm install
+deploy:
+  provider: npm
+  email: vavaballz@gmail.com
+  api_key:
+    secure: rqbxnYn4w5MhTMRMKFXzWDeBAwxnX6LYp1q7WMxReUEjxHJQl6JNOBHsijWYjexJRdIDX0EpDwRdkQ3/y+YFpqVje0jvyDaRP6PONK4ctCyvfyaPnxNL3zaaosDdccjhev+NisEnlyNeOKqLyac8YGtWlL3gi5KIMdrzy3nMPLRhhja0SgdPosaSJ4b6MIqupYFkDH6UECFgUYlfqHnqQcKgfc2c9Ma4un9CdWW5sNp8icRd3uoKc7S5A0KVR+QrN/PysadmbCQ9ve/vQi03ZXyxNT5MQVmwOESbN54FiLIYdQg20F36izNcu3u8o3k4zjC31RrMrq9gB5aNIsgN3Y7nozQm1b+WAmZqJlFmxdPeT085MA2WyOgZAQ/dpLWfGKPfIznCOLYm4iG0qcsVWFB3cnyirHDuI6ql4o2aVe+4BY74+Gwq/+vzxJrtWuAXraMl1gWk0pSSgpA0pc2TNyomdYpGgZ6rKplDPwTm+q7uA/Mf5HrrlaqCNw2eb9J+UwynOW/to/7f05+yXGwJPj+e4zF00GxF1/g+M+RTCb0Y2QYIP+z/rO5KklPPYaSYQfF3rEbb3S1ua1sJsQpYOTkGXn+Q4cVDa0GCOYDQBBQrkKSGxgNfEmWSc4V/t1GL2HGtEMz68gt+INInWI6avrtBuh5wzQL94tTRc063hHk=
+  on:
+    tags: true
+    repo: krobot-framework/krobotjs
