@@ -49,6 +49,7 @@ class CommandManager {
 
   dispatch(message) {
     const splitWithQuotes = text => text.match(new RegExp("[^\\s\"']+|\"([^\"]*)\"|'([^']*)'", 'g')).map(val => val.replace(/\"|\'/g, ''));
+    if(!message.content) return false;
     const lines = splitWithQuotes(message.content);
     if (lines.length == 0) return;
     this._commands.forEach(cmd => {
