@@ -52,13 +52,14 @@ class CommandManager {
     if(!message.content) return false;
     const lines = splitWithQuotes(message.content);
     if (lines.length == 0) return;
+    let called = false;
     this._commands.forEach(cmd => {
       if (cmd.command === lines[0]) {
         cmd.call(this._config.parse, message, lines.splice(1));
-        return true;
+        called = true;
       }
     });
-    return false;
+    return called;
   }
 
 }
