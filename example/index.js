@@ -34,9 +34,8 @@ bot.on('message', message => {
   // If the message is a command, then it will be executed and will return "true"
   // yet, if there is no command, it will return "false"
   if (!commands.dispatch(message)) {
-
+    // continue actions
   }
-  // continue actions
 });
 bot.on('ready', _ => console.log('Connected'));
 bot.on('reconnecting', _ => console.log('Reconnecting'));
