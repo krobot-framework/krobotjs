@@ -1,6 +1,6 @@
 {
   "name": "krobotjs",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A library that helps you create a discord bot with DiscordJS",
   "main": "lib/Krobotjs.js",
   "scripts": {

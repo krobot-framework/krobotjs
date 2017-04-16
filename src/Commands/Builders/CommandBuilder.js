@@ -49,7 +49,7 @@ class CommandBuilder {
       regex = new RegExp(regex, 'g');
 
       if (arg.endsWith('...'))
-        [list, arg] = [true, arg.replace('...')]
+        [list, arg] = [true, arg.replace('...', '')]
 
       this._args.push({
         key: arg,

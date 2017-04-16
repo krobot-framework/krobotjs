@@ -27,7 +27,6 @@ class Command {
         let argument = args[i];
 
         if (!this._args[i].optional && !argument) return;
-
         if (this._args[i].list) {
           argument = args.splice(i)
           let match = true;

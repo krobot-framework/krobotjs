@@ -26,7 +26,7 @@ commands.group().prefix("#").apply(_ => {
     .command("lol <message>", (message, args) => message.reply('lol')).register()
     .sub("test", (message, args) => message.reply('lol test')).register();
   commands
-    .command("test2 <message>", (message, args) => message.reply(args.get('message'))).register()
+    .command("test2 <message...>", (message, args) => message.reply(args.get('message').join(' '))).register()
     .sub("moche", (message, args) => message.reply('t es moche 2')).register();
 });
 
